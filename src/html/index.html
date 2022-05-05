@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Int. Leaks </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favicon.ico">
+	
+	<link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/main.min.css">
+
+	<style type="text/css">
+		.no-fixed { position: relative; }
+		.loader { width: 100px; }
+	</style>
+	
+	<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body class="indie-demo">
+
+	<div id="loading">
+		<svg viewBox="0 0 26 32" class="loader">
+			<path d="M25.26 7.173c0-0.542-0.439-0.981-0.981-0.981h-19.617c-1.082 0-1.962-0.88-1.962-1.962s0.88-1.962 1.962-1.962h19.617c0.542 0 0.981-0.439 0.981-0.981s-0.439-0.981-0.981-0.981h-19.617c-2.167 0-3.924 1.757-3.924 3.924v24.52c0 1.626 1.318 2.943 2.943 2.943h18.638c1.625 0 2.943-1.317 2.943-2.943v-21.577h-0.002zM2.7 28.75v-21.125c0.578 0.335 1.246 0.529 1.962 0.529h0.966v21.577h-1.947c-0.541 0-0.981-0.44-0.981-0.981zM23.3 28.75c0 0.541-0.44 0.981-0.981 0.981h-15.711v-21.577h16.692v20.596z" fill="currentColor" stroke="currentColor"></path>
+			<path d="M24.279 3.25h-19.617c-0.542 0-0.981 0.439-0.981 0.981s0.439 0.981 0.981 0.981h19.617c0.542 0 0.981-0.439 0.981-0.981s-0.439-0.981-0.981-0.981z" fill="currentColor" stroke="currentColor"></path>
+		</svg>
+	</div><!-- /#loading -->
+
+	<nav class="navbar">
+	<div class="container">
+		<ul class="nav nav-pills pull-right indie-navigation">
+		<li role="about-us" class="active"><a href="#">About Us</a></li>
+		<li role="access"><a href="#access">Access</a></li>
+		<li role="disclosed"><a href="#disclosed">Disclosed documents</a></li>
+		<li role="security"><a href="#security">Security</a></li>
+		</ul>
+	</div>
+	</nav>
+
+	<section class="section indie-quotes py3" style="padding-top: 0px;">
+
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<blockquote>
+						<p class="color-white text-light mt4">
+							<strong><u>We strongly believe every bit of information should be available to all.</u></strong><br>
+							Our whistleblowers send us classified documents we regularly disclose and share them on our platform after authenticity checks.
+						</p>
+						<p class="color-white text-light mt4">
+							<i>Truth is coming, and it cannot be stopped.</i>
+						</p>
+						<footer class="color-red mt2">
+							Edouard Neigeant
+						</footer>
+					</blockquote>
+				</div><!-- /.col-md-8 col-md-offset-2 -->
+			</div><!-- /.row -->
+
+		</div><!-- /.container -->
+
+	</section><!-- /.section -->
+
+
+	<div class="section section-red" id="access">
+		<div class="separator card">
+			<svg class="svg-card" viewBox="0 0 139 39.7">
+				<use xlink:href="assets/img/misk-line.svg#icon"></use>
+			</svg>
+			Access
+		</div><!-- /.separator -->
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<h1 class="indie-tag">Status : 
+						<span id="status-connected" class="color-green">Logged in.</span>
+						<span id="status-notconnected" class="color-red" style="display:none">Not connected</span>
+
+					</h1>
+
+					<hr class="thin">
+					<p>
+						To access our documents, you must agree to be logged in with <span class="highlighted">a unique session is generated</span> for you.
+						This is mandatory to make sure all documents are limited to individuals and are not redistributed without our whistleblowers' consent.
+						<br>
+						<strong>By clicking on on the "Accept user agreement" button below, your cookies will be used to access our API.</strong>
+					</p>
+				</div><!-- /.col-md-6 col-md-offset-3 -->
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<button class="btn btn-block btn-light-grey" id="accept-button" disabled>ACCEPT USER AGREEMENT</button>
+
+				</div><!-- /.col-md-6 col-md-offset-3 -->
+			</div><!-- /.row -->
+
+			<br>
+			
+		</div><!-- /.container -->
+	</div><!-- /.section -->
+
+
+
+	<section class="section" id="disclosed">
+		
+		<div class="separator card">
+			<svg class="svg-card" viewBox="0 0 139 39.7">
+				<use xlink:href="assets/img/misk-line.svg#icon"></use>
+			</svg>
+			Disclosed documents
+		</div><!-- /.separator -->
+		<br>
+		
+		<div class="container">
+			
+			<div class="row">
+
+				<div class="col-md-6 col-sm-6">
+					<div class="indie-widget widget-featured">
+
+						<div class="indie-header">
+							<h3 class="indie-title">SCP 173</h3>
+							<div class="indie-header-img">
+								<svg class="indie-svg" viewBox="0 0 433.4 178.3">
+									<use xlink:href="assets/img/public.svg#icon"></use>
+								</svg>
+							</div><!-- /.indie-header-img -->
+						</div><!-- /.indie-header -->
+						
+						<div class="indie-content indie-tickets">
+							<div class="row">
+								<div class="col-md-9">
+									<h1 class="text-uppercase m0 mt2">A classified report<br>from the Foundation.</h1>
+								</div><!-- /.col-md-9 -->
+								<div class="col-md-3">
+									<a href="/api/document?location=/scp_173.disclosed" class="doc-link" target="_blank">
+										<button class="btn btn-indie btn-document">Read now</button>
+									</a>
+								</div><!-- /.col-md-3 -->
+							</div><!-- /.row -->
+						</div><!-- /.indie-content -->
+
+					</div><!-- /.indie-widget -->
+				</div><!-- /.col-md-6 col-sm-6 -->
+
+				<div class="col-md-6 col-sm-6">
+					<div class="indie-widget">
+
+						<div class="indie-header">
+							<h3 class="indie-title">UFO Testimony</h3>
+							<div class="indie-header-img">
+								<svg class="indie-svg" viewBox="0 0 433.4 178.3">
+									<use xlink:href="assets/img/public.svg#icon"></use>
+								</svg>
+							</div><!-- /.indie-header-img -->
+						</div><!-- /.indie-header -->
+
+						<div class="indie-content">
+							<div class="row">
+								<div class="col-md-12">
+									<p>The truth about the latest UFO event that was hidden by the government. An invasion was mentionned in the restricted document.</p>
+									<a href="/api/document?location=/ufo_testimony.disclosed" class="doc-link" target="_blank">
+										<button class="btn btn-indie btn-document">Read now</button>
+									</a>
+								</div>
+							</div>
+						</div><!-- /.indie-content -->
+
+					</div><!-- /.indie-widget -->
+				</div><!-- /.col-md-6 col-sm-6 -->
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="indie-widget indie-light-grey	">
+
+						<div class="indie-header">
+							<h3 class="indie-title">Not leaked yet</h3>
+						</div><!-- /.indie-header -->
+
+						<div class="indie-content">
+							<div class="row">
+								<div class="col-md-12">
+									<p>We are still waiting for the approval from our whistleblower to release the latest leak... Stay tuned.</p>
+								</div>
+							</div>
+						</div><!-- /.indie-content -->
+
+					</div><!-- /.indie-widget -->
+				</div><!-- /.col-md-6 col-sm-6 -->
+			</div>
+
+		</div> <!-- /.container -->
+	</section><!-- /.section -->
+
+	<section class="section section-light-grey" id="security">
+		<div class="separator card">
+			<svg class="svg-card" viewBox="0 0 139 39.7">
+				<use xlink:href="assets/img/misk-line.svg#icon"></use>
+			</svg>
+			Security
+		</div><!-- /.separator -->
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				<h2>New architecture !</h2>
+				<p>We moved our <code>fileservers</code> to an internal network which is not accessible from the internet.</p>
+				<p>
+					We splited our original fileserver into two backend servers : <br>
+					- a public server with disclosed files<br>
+					- a private server with awaiting approval leaks from our source <span class="highlighted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				</p>
+				<hr class="thin" />
+				<h2>Stronger authentication.</h2>
+				<p>Only users who accepted to be logged with an <strong>individual key</strong> will have access to our documents ! Our new stateless <code>API</code> makes sure to deliver the documents in a friendly format.</p>
+				</div>
+			</div>  
+		</div>
+
+	</section><!-- /.section -->
+
+	<section>
+
+		<div class="container mt3">
+			
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					
+					<footer class="copyright" style="font-size: large;"><img src="favicon.ico" width="64px"> &copy; COPYRIGHT <strong>Int. Leaks</strong></footer>
+
+				</div><!-- /.col-md-6 col-md-offset-3 -->
+			</div><!-- /.row -->
+
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+
+
+	<script src="assets/js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+
+	<script src="assets/js/main.js"></script>
+
+	<script type="text/javascript">
+
+		function toggleNotConnected() {
+			$('#status-notconnected').show();
+			$('#status-connected').hide();
+			$('#accept-button').removeAttr('disabled');
+
+			$('.btn-document').attr('disabled', 'disabled');
+			$('.doc-link').removeAttr('href');	
+		}
+
+		$(document).ready(function(){
+
+			$('.doc-link').each( function() {
+				$(this).attr('href', $(this).attr('href') + '&t=' + Date.now());
+			});
+
+			if (document.cookie.indexOf("jwt=") == -1) {
+				toggleNotConnected();
+			}
+			else {
+				$.ajax
+				({ 
+					url: '/api/me',
+					async: false,
+					error: function(_) { toggleNotConnected(); }
+				});
+			}
+
+			$("#accept-button").click(function() {
+				$.ajax
+				({ 
+					url: '/api/auth',
+					async: false,
+					success: function(_) { location.reload() }
+				});
+			});
+
+
+		})
+
+		// if you don't need a loader just comment the next line:
+		window.addEventListener( 'load', loader);
+	</script>
+
+</body>
+</html>
