@@ -94,7 +94,7 @@
 
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center">
-					<button class="btn btn-block btn-light-grey" id="accept-button" disabled>ACCEPT USER AGREEMENT</button>
+					<button class="btn btn-block btn-light-grey" id="accept-button">ACCEPT USER AGREEMENT</button>
 
 				</div><!-- /.col-md-6 col-md-offset-3 -->
 			</div><!-- /.row -->
@@ -262,6 +262,8 @@
 			$('.doc-link').each( function() {
 				$(this).attr('href', $(this).attr('href') + '&t=' + Date.now());
 			});
+
+			$('#accept-button').attr('disabled', 'disabled');
 
 			if (document.cookie.indexOf("jwt=") == -1) {
 				toggleNotConnected();
