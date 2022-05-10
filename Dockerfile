@@ -16,12 +16,11 @@ RUN rm -f /var/www/files/api_0aca881eb4_prod_v42_src/jwt_keys/*
 COPY config/supervisor/nodaemon.conf /etc/supervisor/conf.d/
 COPY config/supervisor/flask.conf /etc/supervisor/conf.d/
 
-EXPOSE 80
-EXPOSE 5000
-
 ENV ADMIN_IP="DEADBEEFLULZ"
 ENV LEAK_DOMAIN="whistleblower.internal"
 
 RUN a2enmod headers proxy proxy_http
+
+EXPOSE 80
 
 CMD echo '127.0.0.1 files.internal whistleblower.internal' >> /etc/hosts; service apache2 restart; supervisord
