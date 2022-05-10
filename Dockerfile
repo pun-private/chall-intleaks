@@ -20,6 +20,7 @@ ENV ADMIN_IP="DEADBEEFLULZ"
 ENV LEAK_DOMAIN="whistleblower.internal"
 
 RUN a2enmod headers proxy proxy_http
+RUN a2dismod status
 
 EXPOSE 80
 
