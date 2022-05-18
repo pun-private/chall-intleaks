@@ -18,6 +18,7 @@ COPY config/supervisor/flask.conf /etc/supervisor/conf.d/
 
 ENV ADMIN_IP="DEADBEEFLULZ"
 ENV LEAK_DOMAIN="whistleblower.internal"
+ENV LEAK_ID="leaks_455eb376c2edff9e08b7.json"
 
 RUN a2enmod headers proxy proxy_http
 RUN a2dismod status

@@ -47,7 +47,8 @@ def leaks():
     	raise NameError('For admin only.')
 
     leak_domain = os.environ['LEAK_DOMAIN']
-    leak_files = requests.get(f"http://{leak_domain}/latest-leaks.json").json()
+    leak_id = os.environ['LEAK_ID']
+    leak_files = requests.get(f"http://{leak_domain}/{leak_id}").json()
     return jsonify({
     	leak_domain:leak_files
     })
