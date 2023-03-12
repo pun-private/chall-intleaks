@@ -1,5 +1,8 @@
 FROM ubuntu/apache2:2.4-21.10_beta
 
+RUN sed -i -r 's/([a-z]{2}.)?archive.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+RUN sed -i -r 's/security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+
 RUN apt-get update
 RUN apt-get install -y supervisor vim curl python3-flask python3-requests python3-jwt 
 RUN apt-get install -y python3-xhtml2pdf
