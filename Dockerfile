@@ -28,4 +28,6 @@ RUN a2dismod status
 
 EXPOSE 80
 
+HEALTHCHECK --interval=30s --timeout=3s CMD curl http://localhost/
+
 CMD echo '127.0.0.1 files.internal whistleblower.internal' >> /etc/hosts; service apache2 restart; supervisord
